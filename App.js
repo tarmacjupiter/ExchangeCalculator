@@ -80,7 +80,7 @@ export default function App() {
 
       <br />
       <Button title="Convert" onPress={convertCurrency} />
-      <Text>Conversion Result: {conversionResult}</Text>
+      <Text style={styles.conversion}>Conversion Result: {conversionResult}</Text>
 
         {/* Currency Modal */}
       <Modal isVisible={isCurrencyModalVisible}>
@@ -142,5 +142,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     marginVertical: 10,
+  },
+  conversion: {
+    fontSize: 20,
   }
 });
